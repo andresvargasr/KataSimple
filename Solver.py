@@ -3,7 +3,7 @@ class Solver:
     def demo(self, numbers):
 
         result = [0, 0, 0, 0]
-        split_numbers = numbers.replace(" ", "").split(',')
+        split_numbers = numbers.trim.replace(" ", "").split(',')
         for x in split_numbers:
             if x.isdigit():
                 print(x)
