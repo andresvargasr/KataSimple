@@ -48,7 +48,7 @@ class TestSolver(TestCase):
 
     # Iteration TDD 3
 
-    def test_string_vacioMinimo(self):
+    def test_string_vacioMaximo(self):
         s = Solver();
         result = s.demo("")
         self.assertTrue(result[2] == 0)
