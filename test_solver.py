@@ -67,3 +67,25 @@ class TestSolver(TestCase):
         s = Solver();
         result = s.demo("2, 3, 9, 7, 15, 88, 24")
         self.assertTrue(result[2] == 88)
+
+# Iteration TDD 4
+
+    def test_string_vacioPromedio(self):
+        s = Solver();
+        result = s.demo("")
+        self.assertTrue(result[3] == 0)
+
+    def test_string_un_numeroPromedio(self):
+        s = Solver();
+        result = s.demo("1")
+        self.assertTrue(result[3] == 1)
+
+    def test_string_dos_numeroPromedio(self):
+        s = Solver();
+        result = s.demo("1, 3")
+        self.assertTrue(result[3] == 2)
+
+    def test_string_n_numeroPromedio(self):
+        s = Solver();
+        result = s.demo("2, 3, 9, 10")
+        self.assertTrue(result[3] == 6)

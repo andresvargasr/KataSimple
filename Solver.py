@@ -5,7 +5,6 @@ class Solver:
         result = [0, 0, 0, 0]
         min_num = 999
         max_num = 0
-
         split_numbers = numbers.strip().replace(" ", "").split(',')
         for x in split_numbers:
             if x.isdigit():
